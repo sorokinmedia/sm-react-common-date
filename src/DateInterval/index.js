@@ -4,14 +4,15 @@ import React from 'react';
 import DatePicker from '../DatePicker';
 import './style.css';
 
-export default function DateInterval() {
-	const { from, to, onChange } = this.props;
+export default function DateInterval(props) {
+	const { from, to, onChange } = props;
 	return (
 		<div className="date-interval">
 			<div className="col-lg-6">
 				<DatePicker
 					selected={moment(from ? from * 1000 : 1)}
 					onChange={(date) => {
+						console.log(date)
 						const newFrom = date.unix();
 						let newTo = to;
 						if (newFrom > newTo) {

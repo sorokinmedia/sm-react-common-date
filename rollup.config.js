@@ -19,7 +19,6 @@ export default {
 		'react',
 		'react-proptypes',
 		'react-dom',
-		'@ckeditor/ckeditor5-build-classic'
 	],
 	plugins: [
 		postcss({

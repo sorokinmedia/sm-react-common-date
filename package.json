@@ -20,9 +20,13 @@
 	"peerDependencies": {
 		"prop-types": "^15.6.2",
 		"react": "^16.0.0",
+		"moment": "^2.22.1",
+		"react-day-picker": "^7.1.6",
 		"react-dom": "^16.0.0"
 	},
 	"devDependencies": {
+		"react-day-picker": "^7.1.6",
+		"moment": "^2.22.1",
 		"babel-core": "^6.26.0",
 		"babel-eslint": "^8.2.3",
 		"babel-jest": "^23.2.0",
