@@ -18,8 +18,6 @@ function setup(customProps, lifeCycle = false) {
 }
 
 const FORMAT = 'DD-MM-YYYY'
-const parseDate = date => moment(date, FORMAT).toDate()
-const formatDate = date => moment(date).format(FORMAT)
 describe('DatePicker component', () => {
 
 	const { container, props } = setup()
@@ -35,8 +33,8 @@ describe('DatePicker component', () => {
 		expect(container.find('DayPickerInput').prop('selectedDay')).toEqual(props.selected)
 		expect(container.find('DayPickerInput').prop('format')).toEqual(FORMAT)
 		expect(container.find('DayPickerInput').prop('placeholder')).toEqual(FORMAT)
-		expect(container.find('DayPickerInput').prop('parseDate').toString()).toEqual(parseDate.toString())
-		expect(container.find('DayPickerInput').prop('formatDate').toString()).toEqual(formatDate.toString())
+		expect(container.find('DayPickerInput').prop('parseDate')('20111031').toString()).toEqual('Sun Nov 20 1031 00:00:00 GMT+0300 (Russia TZ 2 Standard Time)')
+		expect(container.find('DayPickerInput').prop('formatDate')('20111031').toString()).toEqual('31-10-2011')
 	})
 
 })
