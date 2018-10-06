@@ -19,6 +19,8 @@ export default {
 		'react',
 		'react-proptypes',
 		'react-dom',
+		'react-day-picker',
+		'moment',
 	],
 	plugins: [
 		postcss({
