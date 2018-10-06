@@ -12,7 +12,6 @@ export default function DateInterval(props) {
 				<DatePicker
 					selected={moment(from ? from * 1000 : 1)}
 					onChange={(date) => {
-						console.log(date)
 						const newFrom = date.unix()
 						let newTo = to
 						if (newFrom > newTo) {
