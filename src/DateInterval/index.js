@@ -2,7 +2,6 @@ import moment from 'moment'
 import PropTypes from 'prop-types'
 import React from 'react'
 import DatePicker from '../DatePicker'
-import './style.css'
 
 export default function DateInterval(props) {
 	const { from, to, onChange } = props
