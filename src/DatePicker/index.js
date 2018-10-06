@@ -1,12 +1,12 @@
-import moment from 'moment';
-import PropTypes from 'prop-types';
-import React from 'react';
-import ReactDatePicker from 'react-day-picker/DayPickerInput';
-import './style.css';
+import moment from 'moment'
+import PropTypes from 'prop-types'
+import React from 'react'
+import ReactDatePicker from 'react-day-picker/DayPickerInput'
+import './style.css'
 
-export default function DatePicker() {
-	const { selected, onChange } = this.props;
-	const FORMAT = 'DD-MM-YYYY';
+export default function DatePicker(props) {
+	const { selected, onChange } = props
+	const FORMAT = 'DD-MM-YYYY'
 	return (
 		<div className="space-datepicker">
 			<ReactDatePicker
@@ -18,7 +18,7 @@ export default function DatePicker() {
 				format={FORMAT}
 				placeholder={FORMAT}
 			/>
-		</div>);
+		</div>)
 }
 
 DatePicker.propTypes = {

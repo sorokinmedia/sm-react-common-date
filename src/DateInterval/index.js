@@ -1,11 +1,11 @@
-import moment from 'moment';
-import PropTypes from 'prop-types';
-import React from 'react';
-import DatePicker from '../DatePicker';
-import './style.css';
+import moment from 'moment'
+import PropTypes from 'prop-types'
+import React from 'react'
+import DatePicker from '../DatePicker'
+import './style.css'
 
 export default function DateInterval(props) {
-	const { from, to, onChange } = props;
+	const { from, to, onChange } = props
 	return (
 		<div className="date-interval">
 			<div className="col-lg-6">
@@ -13,12 +13,12 @@ export default function DateInterval(props) {
 					selected={moment(from ? from * 1000 : 1)}
 					onChange={(date) => {
 						console.log(date)
-						const newFrom = date.unix();
-						let newTo = to;
+						const newFrom = date.unix()
+						let newTo = to
 						if (newFrom > newTo) {
-							newTo = newFrom;
+							newTo = newFrom
 						}
-						onChange({ from: newFrom, to: newTo });
+						onChange({ from: newFrom, to: newTo })
 					}}
 				/>
 			</div>
@@ -26,16 +26,16 @@ export default function DateInterval(props) {
 				<DatePicker
 					selected={moment(to ? to * 1000 : Date.now())}
 					onChange={(date) => {
-						let newFrom = from;
-						const newTo = date.unix();
+						let newFrom = from
+						const newTo = date.unix()
 						if (newTo < newFrom) {
-							newFrom = newTo;
+							newFrom = newTo
 						}
-						onChange({ from: newFrom, to: newTo });
+						onChange({ from: newFrom, to: newTo })
 					}}
 				/>
 			</div>
-		</div>);
+		</div>)
 }
 
 DateInterval.propTypes = {
