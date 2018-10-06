@@ -10,7 +10,7 @@ export default function DatePicker(props) {
 	return (
 		<div className="space-datepicker">
 			<ReactDatePicker
-				{...this.props}
+				{...props}
 				selectedDay={selected}
 				onDayChange={date => onChange(moment(date))}
 				formatDate={date => moment(date).format(FORMAT)}
