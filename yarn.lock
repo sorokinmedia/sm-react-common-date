@@ -4731,7 +4731,7 @@
   "version" "0.1.1"
 
 "is-svg@^2.0.0":
-  "version" "^4.2.1"
+  "version" "^4.2.2"
   dependencies:
     "html-comment-regex" "^1.1.0"
 
@@ -5201,13 +5201,13 @@
   "version" "3.0.2"
 
 "js-yaml@^3.4.3", "js-yaml@^3.7.0", "js-yaml@^3.9.1":
-  "version" "^3.13.0"
+  "version" "^3.13.1"
   dependencies:
     "argparse" "^1.0.7"
     "esprima" "^4.0.0"
 
 "js-yaml@~3.7.0":
-  "version" "^3.13.0"
+  "version" "^3.13.1"
   dependencies:
     "argparse" "^1.0.7"
     "esprima" "^2.6.0"
@@ -9143,13 +9143,13 @@
   "version" "3.1.1"
 
 "yargs-parser@^13.1.2":
-  "version" "^13.1.1"
+  "version" "^13.1.2"
   dependencies:
     "camelcase" "^5.0.0"
     "decamelize" "^1.2.0"
 
 "yargs-parser@^9.0.2":
-  "version" "^13.1.1"
+  "version" "^13.1.2"
   dependencies:
     "camelcase" "^4.1.0"
 

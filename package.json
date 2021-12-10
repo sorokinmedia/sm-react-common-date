@@ -28,11 +28,11 @@
 		"ansi-regex": "^6.0.1",
 		"braces": "^2.3.1",
 		"glob-parent": "^5.1.2",
-		"is-svg": "^4.2.1",
-		"js-yaml": "^3.13.0",
+		"is-svg": "^4.2.2",
+		"js-yaml": "^3.13.2",
 		"merge": "^2.1.1",
 		"node-notifier": "^8.0.1",
-		"yargs-parser": "^13.1.1",
+		"yargs-parser": "^13.1.2",
 		"color-string": "^1.5.5"
 	},
 	"devDependencies": {
